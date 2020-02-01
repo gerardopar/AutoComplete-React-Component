@@ -1,0 +1,74 @@
+/*dropdown styles version 1*/
+.dropdown{
+    width: 90%;
+
+    &__item{
+        background-color: whitesmoke;
+        border-bottom: solid 1px rgb(235, 235, 235);
+        font-weight: 100;
+        list-style: none;
+        padding: 12px 16px;
+        &:hover{
+            background-color: rgb(174, 174, 174);
+            color: #fff;
+            cursor: pointer;
+        }
+        &--active{
+            background-color: rgb(174, 174, 174);
+            color: #fff;
+            cursor: pointer;
+            list-style: none;
+            padding: 12px 16px;
+        }
+    }
+}
+
+/*dropdown styles version 2*/
+.dropdownV2{
+    width: 90%;
+
+    &__item{
+        background-color: whitesmoke;
+        border-bottom: solid 1px rgb(235, 235, 235);
+        font-weight: 100;
+        list-style: none;
+        padding: 12px 16px;
+        position: relative;
+        &:hover{
+            border-left: solid 7px rgb(72, 117, 255);
+            cursor: pointer;
+            font-weight: bold;  
+            transition: border .2s ease-in-out;
+            -webkit-transition: border .2s ease-in-out;
+            -moz-transition: border .2s ease-in-out;
+            -ms-transition: border .2s ease-in-out;
+            -o-transition: border .2s ease-in-out;
+        }
+        
+        &:last-child {
+            border-radius: 0px 0px 10px 10px;
+            -webkit-border-radius: 0px 0px 10px 10px;
+            -moz-border-radius: 0px 0px 10px 10px;
+            -ms-border-radius: 0px 0px 10px 10px;
+            -o-border-radius: 0px 0px 10px 10px;
+        }
+        &:nth-child(even){
+            background-color: rgb(234, 234, 234);
+        }
+        
+        &--active{
+            background-color: rgb(239, 239, 239);
+            border-left: solid 7px rgb(72, 117, 255);
+            cursor: pointer;
+            font-weight: bold;
+            list-style: none;
+            padding: 12px 16px;
+            position: relative;
+            transition: border .2s ease-in-out;
+            -webkit-transition: border .2s ease-in-out;
+            -moz-transition: border .2s ease-in-out;
+            -ms-transition: border .2s ease-in-out;
+            -o-transition: border .2s ease-in-out;
+        }
+    }
+}
