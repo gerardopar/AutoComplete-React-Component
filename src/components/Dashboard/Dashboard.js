@@ -1,9 +1,9 @@
 // importing modules
-import React, { Component } from 'react';
+import React from 'react';
 // importing components
 import AutoComplete from '../AutoComplete/AutoComplete';
 
-const Dashboard = () => (
+const dashboard = () => (
     <div className="dashboard">
         <div className="dashboard__col">
             {/*AutoComplete Component version 1*/}
@@ -23,7 +23,7 @@ const Dashboard = () => (
         </div>
     </div>
 )
-export default Dashboard;
+export default dashboard;
 
 
 
