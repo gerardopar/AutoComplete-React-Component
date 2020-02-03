@@ -7,8 +7,8 @@ const autoComplete = (props) => (
     <div className="autocomplete">
         <input 
             onChange={props.handleLocationData}
-            onKeyDown={ props.handleKeyDown }
-            onKeyPress={props.handleEnterPress}
+            onKeyDown={props.handleKeyDown}
+            onKeyPress={props.handleLocationSelection}
             autoComplete="off"
             className={`${props.inputFieldStyles}`}
             placeholder="Search Location"
@@ -24,7 +24,7 @@ const autoComplete = (props) => (
                     index={index}
                     key={location.id} 
                     {...location}
-                    handleLocationDescription={props.handleLocationDescription}
+                    handleLocationSelection={props.handleLocationSelection}
                     dropDownItemStyles={props.dropDownItemStyles}
                     dropDownItemActiveStyles={props.dropDownItemActiveStyles}
                 />)) : null

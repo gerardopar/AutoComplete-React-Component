@@ -4,11 +4,11 @@ import React from 'react';
 const dropDownItem = ({ 
     cursor, description, 
     id, index, 
-    name, handleLocationDescription,
+    name, handleLocationSelection,
     dropDownItemActiveStyles, dropDownItemStyles
 }) => (
     <li
-    onClick={() => handleLocationDescription(id)}
+    onClick={(e) => handleLocationSelection(e, id)}
     className={cursor === index 
         ? `${dropDownItemActiveStyles}` 
         : `${dropDownItemStyles}`}
