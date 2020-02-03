@@ -1,0 +1,8 @@
+.dashboard{
+    @include applyFlex(flex-start, center);
+    height: 100vh;
+    
+    &__col{
+        flex: 1;
+    }
+}
